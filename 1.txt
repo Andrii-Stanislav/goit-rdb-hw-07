@@ -1,0 +1,14 @@
+-- 1 option
+SELECT id, date, 
+DATE_FORMAT(date, '%Y') as year,
+DATE_FORMAT(date, '%m') as month,
+DATE_FORMAT(date, '%d') as day
+FROM mydb.orders;
+
+
+-- 2 option
+SELECT id, date, 
+YEAR(date) as year,
+MONTH(date) as month,
+DAY(date, '%d') as day
+FROM mydb.orders;

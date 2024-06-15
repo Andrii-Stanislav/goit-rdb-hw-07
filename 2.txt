@@ -1,0 +1,3 @@
+SELECT id, date, 
+DATE_ADD(date, INTERVAL 1 DAY) as next_day_date
+FROM mydb.orders;
